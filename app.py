@@ -2,7 +2,7 @@ from flask import Flask, jsonify, render_template, request
 
 from jarvis_core import JarvisAssistant
 
-app = Flask(__name__)
+app = Flask(__name__, static_folder="public", static_url_path="")
 assistant = JarvisAssistant()
 
 

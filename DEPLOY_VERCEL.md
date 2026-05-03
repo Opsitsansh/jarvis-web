@@ -1,51 +1,57 @@
 # Deploy Jarvis To Vercel
 
-## What changed
+## Current setup
 
-This version of Jarvis is web-first.
+This project is ready for Vercel as a web-first Flask app with a React frontend.
 
-- Commands like `google python`, `youtube lo-fi`, and `open github.com` now trigger browser actions.
-- Memory and command history are stored in the browser with `localStorage`, so they work on Vercel without writing files on the server.
-- Desktop-only actions like opening Notepad or closing local apps are intentionally not supported in the deployed web app.
-- The interface is now built with React and compiled into `static/react`.
+- Flask serves the app from `app.py`
+- React is built into `public/react`
+- Browser memory and history use `localStorage`
+- Desktop-only actions are converted into web-safe fallbacks where possible
 
-## Deploy steps
+## Before you deploy
 
-1. Install the Vercel CLI if needed:
-
-```bash
-npm i -g vercel
-```
-
-2. In this project folder, run:
+Build the frontend once so the latest React files are committed:
 
 ```bash
 npm install
 npm run build
-vercel
 ```
 
-3. For production deployment:
+## Deploy from GitHub
+
+1. Push the latest code to GitHub.
+2. In Vercel, choose `Add New Project`.
+3. Import the GitHub repo: `Opsitsansh/jarvis-web`.
+4. Keep the project root as the repo root.
+5. Deploy.
+
+Vercel should detect the Python app automatically from `app.py`.
+
+## Optional environment variables
+
+Add this only if you want real AI answers:
 
 ```bash
-npm run build
-vercel --prod
+OPENAI_API_KEY=your_key_here
 ```
 
-## Supported web commands
+Optional model override:
 
-- `open github.com`
-- `open youtube`
-- `google python flask tutorial`
-- `youtube synthwave mix`
-- `wikipedia alan turing`
-- `weather in Delhi`
-- `top news`
-- `what is 24 multiplied by 8`
-- `remember that ship on monday`
-- `what do you remember`
-- `system status`
+```bash
+OPENAI_MODEL=gpt-5.2
+```
+
+## Supported web features
+
+- natural question prompts
+- Google, YouTube, Wikipedia, and website actions
+- weather, news, time, and date
+- cricket score lookup
+- browser memory and recent history
+- calculations, dice, and coin flip
+- optional AI answers when API key is configured
 
 ## Important limitation
 
-Vercel cannot control the user's computer, open local desktop apps, or kill Windows processes. That is why the deployed app focuses on browser-safe actions.
+Vercel cannot control a user's PC, open local desktop apps, close system apps, or act like a Windows-level assistant. This project is designed as a polished browser-based Jarvis experience for resume/demo use.

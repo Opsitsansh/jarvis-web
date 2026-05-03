@@ -6,7 +6,7 @@ export default defineConfig({
   plugins: [react()],
   root: path.resolve(__dirname, "frontend"),
   build: {
-    outDir: path.resolve(__dirname, "static/react"),
+    outDir: path.resolve(__dirname, "public/react"),
     emptyOutDir: true,
     rollupOptions: {
       output: {
