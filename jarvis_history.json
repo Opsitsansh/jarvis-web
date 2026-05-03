@@ -1,0 +1,67 @@
+[
+  {
+    "command": "system status",
+    "response": "System online. Local time is 12:09 AM. Voice input is available and voice output is available.",
+    "timestamp": "2026-05-03T00:09:43"
+  },
+  {
+    "command": "motivate me",
+    "response": "Focus mode engaged. One step at a time.",
+    "timestamp": "2026-05-03T00:09:43"
+  },
+  {
+    "command": "roll a dice",
+    "response": "I rolled a 3.",
+    "timestamp": "2026-05-03T00:09:43"
+  },
+  {
+    "command": "flip a coin",
+    "response": "It is heads.",
+    "timestamp": "2026-05-03T00:09:43"
+  },
+  {
+    "command": "clear memory",
+    "response": "Memory cleared.",
+    "timestamp": "2026-05-03T00:09:43"
+  },
+  {
+    "command": "remember that deploy at 8",
+    "response": "I will remember that deploy at 8.",
+    "timestamp": "2026-05-03T00:09:43"
+  },
+  {
+    "command": "show history",
+    "response": "I found 6 recent commands.",
+    "timestamp": "2026-05-03T00:09:43"
+  },
+  {
+    "command": "system status",
+    "response": "System online. Local time is 12:09 AM. Voice input is available and voice output is available.",
+    "timestamp": "2026-05-03T00:09:43"
+  },
+  {
+    "command": "system status",
+    "response": "System online. Local time is 12:28 AM. Voice input is available and voice output is available.",
+    "timestamp": "2026-05-03T00:28:58"
+  },
+  {
+    "command": "help",
+    "response": "I can open or close apps and sites, search Google, YouTube, and Wikipedia, tell the time or date, check weather, read news, run a speed test, calculate answers, remember notes, show system status, and keep recent command history.",
+    "timestamp": "2026-05-03T00:29:11"
+  },
+  {
+    "command": "hi Jarvis",
+    "response": "Hello. How can I help you?",
+    "timestamp": "2026-05-03T00:30:43"
+  },
+  {
+    "command": "can you open",
+    "response": "I understood the command, but I do not support that action yet. Try asking for help to see what I can do.",
+    "timestamp": "2026-05-03T00:30:52"
+  },
+  {
+    "command": "can you open clock",
+    "response": "I understood the command, but I do not support that action yet. Try asking for help to see what I can do.",
+    "timestamp": "2026-05-03T00:31:05"
+  }
+]
